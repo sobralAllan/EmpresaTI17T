@@ -1,0 +1,15 @@
+C:\Users\allan.ssilva4\source\repos\EmpresaTI17T\EmpresaTI17T\bin\Debug\EmpresaTI17T.exe.config
+C:\Users\allan.ssilva4\source\repos\EmpresaTI17T\EmpresaTI17T\bin\Debug\EmpresaTI17T.exe
+C:\Users\allan.ssilva4\source\repos\EmpresaTI17T\EmpresaTI17T\bin\Debug\EmpresaTI17T.pdb
+C:\Users\allan.ssilva4\source\repos\EmpresaTI17T\EmpresaTI17T\obj\Debug\EmpresaTI17T.csproj.AssemblyReference.cache
+C:\Users\allan.ssilva4\source\repos\EmpresaTI17T\EmpresaTI17T\obj\Debug\EmpresaTI17T.csproj.SuggestedBindingRedirects.cache
+C:\Users\allan.ssilva4\source\repos\EmpresaTI17T\EmpresaTI17T\obj\Debug\EmpresaTI17T.Atualizar.resources
+C:\Users\allan.ssilva4\source\repos\EmpresaTI17T\EmpresaTI17T\obj\Debug\EmpresaTI17T.Cadastrar.resources
+C:\Users\allan.ssilva4\source\repos\EmpresaTI17T\EmpresaTI17T\obj\Debug\EmpresaTI17T.Consultar.resources
+C:\Users\allan.ssilva4\source\repos\EmpresaTI17T\EmpresaTI17T\obj\Debug\EmpresaTI17T.Excluir.resources
+C:\Users\allan.ssilva4\source\repos\EmpresaTI17T\EmpresaTI17T\obj\Debug\EmpresaTI17T.Empresa.resources
+C:\Users\allan.ssilva4\source\repos\EmpresaTI17T\EmpresaTI17T\obj\Debug\EmpresaTI17T.Properties.Resources.resources
+C:\Users\allan.ssilva4\source\repos\EmpresaTI17T\EmpresaTI17T\obj\Debug\EmpresaTI17T.csproj.GenerateResource.cache
+C:\Users\allan.ssilva4\source\repos\EmpresaTI17T\EmpresaTI17T\obj\Debug\EmpresaTI17T.csproj.CoreCompileInputs.cache
+C:\Users\allan.ssilva4\source\repos\EmpresaTI17T\EmpresaTI17T\obj\Debug\EmpresaTI17T.exe
+C:\Users\allan.ssilva4\source\repos\EmpresaTI17T\EmpresaTI17T\obj\Debug\EmpresaTI17T.pdb
