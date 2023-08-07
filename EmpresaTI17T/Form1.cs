@@ -16,6 +16,9 @@ namespace EmpresaTI17T
         Consultar con;
         Atualizar atu;
         Excluir exc;
+        DAO consul;
+       
+        
         public Empresa()
         {
             InitializeComponent();
@@ -23,8 +26,11 @@ namespace EmpresaTI17T
             con = new Consultar();
             atu = new Atualizar();
             exc = new Excluir();
+            consul = new DAO();
+           
         }//fim do construtor
 
+        
         private void Empresa_Load(object sender, EventArgs e)
         {
 

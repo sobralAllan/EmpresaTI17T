@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.uf = new System.Windows.Forms.MaskedTextBox();
+            this.telefone = new System.Windows.Forms.MaskedTextBox();
+            this.cidade = new System.Windows.Forms.TextBox();
+            this.nome = new System.Windows.Forms.TextBox();
+            this.cpf = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,49 +51,55 @@
             this.button1.TabIndex = 22;
             this.button1.Text = "Atualizar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // maskedTextBox3
+            // uf
             // 
-            this.maskedTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.maskedTextBox3.Location = new System.Drawing.Point(149, 264);
-            this.maskedTextBox3.Mask = "aa";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(231, 30);
-            this.maskedTextBox3.TabIndex = 21;
+            this.uf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.uf.Location = new System.Drawing.Point(149, 264);
+            this.uf.Mask = "aa";
+            this.uf.Name = "uf";
+            this.uf.Size = new System.Drawing.Size(231, 30);
+            this.uf.TabIndex = 21;
+            this.uf.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.uf_MaskInputRejected);
             // 
-            // maskedTextBox2
+            // telefone
             // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.maskedTextBox2.Location = new System.Drawing.Point(149, 192);
-            this.maskedTextBox2.Mask = "(99)99999-9999";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(231, 30);
-            this.maskedTextBox2.TabIndex = 20;
+            this.telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.telefone.Location = new System.Drawing.Point(149, 192);
+            this.telefone.Mask = "(99)99999-9999";
+            this.telefone.Name = "telefone";
+            this.telefone.Size = new System.Drawing.Size(231, 30);
+            this.telefone.TabIndex = 20;
+            this.telefone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.telefone_MaskInputRejected);
             // 
-            // textBox2
+            // cidade
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox2.Location = new System.Drawing.Point(149, 228);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(230, 30);
-            this.textBox2.TabIndex = 19;
+            this.cidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cidade.Location = new System.Drawing.Point(149, 228);
+            this.cidade.Name = "cidade";
+            this.cidade.Size = new System.Drawing.Size(230, 30);
+            this.cidade.TabIndex = 19;
+            this.cidade.TextChanged += new System.EventHandler(this.cidade_TextChanged);
             // 
-            // textBox1
+            // nome
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox1.Location = new System.Drawing.Point(149, 156);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 30);
-            this.textBox1.TabIndex = 18;
+            this.nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.nome.Location = new System.Drawing.Point(149, 156);
+            this.nome.Name = "nome";
+            this.nome.Size = new System.Drawing.Size(230, 30);
+            this.nome.TabIndex = 18;
+            this.nome.TextChanged += new System.EventHandler(this.nome_TextChanged);
             // 
-            // maskedTextBox1
+            // cpf
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.maskedTextBox1.Location = new System.Drawing.Point(149, 119);
-            this.maskedTextBox1.Mask = "999.999.999-99";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(231, 30);
-            this.maskedTextBox1.TabIndex = 17;
+            this.cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cpf.Location = new System.Drawing.Point(149, 119);
+            this.cpf.Mask = "99999999999";
+            this.cpf.Name = "cpf";
+            this.cpf.Size = new System.Drawing.Size(231, 30);
+            this.cpf.TabIndex = 17;
+            this.cpf.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.cpf_MaskInputRejected);
             // 
             // label6
             // 
@@ -162,11 +168,11 @@
             this.ClientSize = new System.Drawing.Size(421, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.uf);
+            this.Controls.Add(this.telefone);
+            this.Controls.Add(this.cidade);
+            this.Controls.Add(this.nome);
+            this.Controls.Add(this.cpf);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -174,6 +180,7 @@
             this.Controls.Add(this.label2);
             this.Name = "Atualizar";
             this.Text = "Atualizar";
+            this.Load += new System.EventHandler(this.Atualizar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,11 +189,11 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox uf;
+        private System.Windows.Forms.MaskedTextBox telefone;
+        private System.Windows.Forms.TextBox cidade;
+        private System.Windows.Forms.TextBox nome;
+        private System.Windows.Forms.MaskedTextBox cpf;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

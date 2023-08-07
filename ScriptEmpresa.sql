@@ -9,3 +9,6 @@ create table pessoa(
     UF varchar(3) not null
 )engine = InnoDB;
 
+insert into pessoa(CPF, nome, telefone, cidade, UF)
+values('','','','','');
+

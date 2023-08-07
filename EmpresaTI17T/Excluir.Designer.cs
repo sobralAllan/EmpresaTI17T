@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.cpf = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -44,14 +44,15 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Excluir Pessoa";
             // 
-            // maskedTextBox1
+            // cpf
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.maskedTextBox1.Location = new System.Drawing.Point(156, 132);
-            this.maskedTextBox1.Mask = "999.999.999-99";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(231, 30);
-            this.maskedTextBox1.TabIndex = 8;
+            this.cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cpf.Location = new System.Drawing.Point(156, 132);
+            this.cpf.Mask = "99999999999";
+            this.cpf.Name = "cpf";
+            this.cpf.Size = new System.Drawing.Size(231, 30);
+            this.cpf.TabIndex = 8;
+            this.cpf.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.cpf_MaskInputRejected);
             // 
             // label2
             // 
@@ -72,6 +73,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "Excluir";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Excluir
             // 
@@ -79,7 +81,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(421, 450);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.cpf);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Excluir";
@@ -92,7 +94,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox cpf;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
     }
